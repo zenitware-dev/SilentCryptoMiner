@@ -16,6 +16,8 @@ Features
 
  - Hidden CPU Mining + GPU Mining with selective miner inclusion
 
+ - Written on C/C++
+
  - Start only after reboot pc (increase detects) 
  
  - GUI Builder (RU / EN Language)
