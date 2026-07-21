@@ -1132,7 +1132,8 @@ class XmrigMultiConfigBuilder(QMainWindow):
         output_lines: list[str] = []
         for title, args in self.build_commands():
             from encrypt_config import encrypter_aes
-            output_lines.extend((f"# {title}", subprocess.list2cmdline(args), encrypter_aes(" ".join(args[1:]))))
+            mini_bool = title.lower().startswith("cpu")
+            output_lines.extend((f"# {title}", subprocess.list2cmdline(args), ("|" if not mini_bool else "") +  encrypter_aes(" ".join(args[1:])) + ( "|" if mini_bool else "" )      ))
         self.output_edit.setPlainText("\n".join(output_lines).rstrip())
 
         if active:
