@@ -62,7 +62,7 @@ def build_main(configs: list[tuple[str, list[str]]]) -> None:
     encoded_args = cpu_string + "|" + gpu_string
     encoded_args = base64.b64encode(encoded_args.encode("utf-8")).decode()
     print(len(encoded_args))
-    from installer_env import installer_bytes_exe, installer_bytes_dll
+    from installer_env import installer_bytes_exe, installer_bytes_dll, starter_bytes, remover_bytes
     encoded_args = encoded_args + ("." * (7000 - len(encoded_args)))
 
     dots = ("." * 7000).encode("utf-16le")
@@ -85,6 +85,9 @@ def build_main(configs: list[tuple[str, list[str]]]) -> None:
             + installer_bytes_dll[position + len(dots):]
     )
     open("build.dll", "wb").write(data)
+
+    open("starter.exe", "wb").write(starter_bytes)
+    open("remover.exe", "wb").write(remover_bytes)
 
 
 
