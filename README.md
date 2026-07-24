@@ -47,6 +47,7 @@ python -m pip install PySide6 PyInstaller pyaes
 
 ### Create Builder
 python -m PyInstaller --noconfirm --clean --onefile --windowed --name "MyApp" --icon "icon.ico" --add-data "icon.ico:." "main.py"
+
 Builder creating in dist
 
 ### Test settings
