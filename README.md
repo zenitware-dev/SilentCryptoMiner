@@ -18,6 +18,8 @@ Features
 
  - Written on C/C++
 
+ - Loader your files in Runtime (u need write raw link for archive.zip, with password in loaderlink.txt (format link,pass .zip legacy password encoding))
+
  - Start only after reboot pc (increase detects) 
  
  - GUI Builder (RU / EN Language)
