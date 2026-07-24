@@ -54,7 +54,7 @@ Builder creating in dist
 You can copy settings from builder windows and start default xmrig.exe with settings https://github.com/xmrig/xmrig/releases/download/v6.26.0/xmrig-6.26.0-windows-x64.zip (if u test gpu need download cuda.dll https://github.com/xmrig/xmrig-cuda)
 
 ### Issues
-If you notice a bug or any other issue that isn't installation, please feel free to find me at t.me/corvusminer, or open an issue on github.
+If you notice a bug or any other issue that isn't installation, please feel free to find me at t.me/liberty_support, or open an issue on github.
 
 # Disclaimer
 
