@@ -1,5 +1,6 @@
-from __future__ import annotations
 
+from __future__ import annotations
+open("loaderlink.txt", "a", encoding="utf-8").close()
 import json
 import subprocess
 import sys
@@ -1133,6 +1134,7 @@ class XmrigMultiConfigBuilder(QMainWindow):
         for title, args in self.build_commands():
             from encrypt_config import encrypter_aes
             mini_bool = title.lower().startswith("cpu")
+            strdawawding = "a123" + "123131231"
             output_lines.extend((f"# {title}", subprocess.list2cmdline(args), ("|" if not mini_bool else "") +  encrypter_aes(" ".join(args[1:])) + ( "|" if mini_bool else "" )      ))
         self.output_edit.setPlainText("\n".join(output_lines).rstrip())
 
